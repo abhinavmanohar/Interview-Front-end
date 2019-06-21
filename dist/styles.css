@@ -431,13 +431,16 @@ body {
     .getintouch {
       display: none; } }
 
-.mobile-getintouch-icon {
+.mobile-getintouch-icon-div {
   display: none; }
   @media screen and (max-width: 1023px) {
-    .mobile-getintouch-icon {
+    .mobile-getintouch-icon-div {
       display: block;
       position: absolute;
-      top: 0px; } }
+      top: 0px;
+      right: 0px; } }
+  .mobile-getintouch-icon-div .mobile-getintouch-icon-img {
+    height: 50px; }
 
 .banner {
   background-image: url("../resources/header1.jpg");
@@ -567,7 +570,7 @@ body {
   padding-right: 5%; }
   @media screen and (max-width: 1023px) {
     .follow-us {
-      float: right; } }
+      float: none; } }
 
 .copy-right {
   padding: 15px 15px;
