@@ -1,0 +1,67 @@
+.logo {
+  float: left;
+  padding: 15px 0px;
+  font-size: 20px;
+  padding-left: 5%; }
+  @media screen and (max-width: 1023px) {
+    .logo {
+      margin: 0 auto;
+      display: table;
+      float: none; } }
+
+.menu {
+  float: right;
+  display: -webkit-inline-box;
+  padding: 15px 15px;
+  font-size: 20px;
+  padding-right: 5%; }
+  .menu > div {
+    padding: 0px 15px; }
+  @media screen and (max-width: 1023px) {
+    .menu {
+      top: 50px;
+      position: absolute;
+      display: none;
+      width: 100%;
+      background-color: #333132; } }
+
+body {
+  margin: 0px; }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #333132; }
+
+.header {
+  grid-area: header;
+  color: #fff;
+  height: 50px;
+  grid-column: 1/7; }
+
+.mobile-menu {
+  display: none;
+  cursor: pointer; }
+  @media screen and (max-width: 1023px) {
+    .mobile-menu {
+      display: block;
+      position: absolute;
+      top: 0px;
+      padding: 10px; } }
+  .mobile-menu .mobile-menu-span {
+    font-size: 20px; }
+
+.getintouch {
+  border-radius: 50px;
+  background-color: #e57927; }
+  @media screen and (max-width: 1023px) {
+    .getintouch {
+      display: none; } }
+
+.mobile-getintouch-icon {
+  display: none; }
+  @media screen and (max-width: 1023px) {
+    .mobile-getintouch-icon {
+      display: block;
+      position: absolute;
+      top: 0px; } }

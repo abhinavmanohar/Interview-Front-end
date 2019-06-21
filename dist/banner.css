@@ -1,0 +1,36 @@
+.banner {
+  background-image: url("../resources/header1.jpg");
+  background-position: 60% 0%;
+  height: 600px; }
+
+.banner-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 50%;
+  margin: 0 auto; }
+  @media screen and (max-width: 1023px) {
+    .banner-container {
+      grid-template-columns: auto;
+      margin: 0; } }
+
+.div-wrapper {
+  padding-top: 5%; }
+
+.banner-text-image {
+  width: 140px; }
+  @media screen and (max-width: 1023px) {
+    .banner-text-image {
+      width: 100px; } }
+
+@media screen and (max-width: 1023px) {
+  .icon-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px; } }
+
+@media screen and (max-width: 1023px) {
+  .icon-wrapper h2 {
+    margin-top: 30px;
+    margin-left: 30px; } }

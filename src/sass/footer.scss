@@ -1,0 +1,22 @@
+.footer{
+    background-color: #333132;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+.follow-us{
+    float: right;
+    display: -webkit-inline-box;
+    padding: 15px 15px;
+    
+    padding-right: 5%;
+    @media screen and(max-width:1023px){
+        float: right;
+    }
+}
+
+.copy-right{
+    padding: 15px 15px;
+    padding-left: 5%;
+    display: -webkit-inline-box;
+}

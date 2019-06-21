@@ -12,7 +12,7 @@ const browserSync = require('browser-sync');
 
 gulp.task('twig', () => {
   return gulp
-    .src('src/templates/*.html.twig')
+    .src('src/templates/index.html.twig')
     .pipe(twig())
     .pipe(rename('index.html'))
     .pipe(gulp.dest('dist'));
@@ -60,7 +60,7 @@ gulp.task('browsersync', () => {
     }
   });
   gulp.watch(
-    ['src/sass/**/*.scss', 'src/js/*.js'],
+    ['src/sass/**/*.scss', 'src/js/*.js','src/templates/*.html.twig'],
     gulp.series('build', browserSync.reload)
   );
 });
