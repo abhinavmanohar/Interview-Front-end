@@ -18,6 +18,12 @@ gulp.task('twig', () => {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('copy', function () {
+    return gulp.src(['src/resources/**/*'], {
+        base: 'src'
+    }).pipe(gulp.dest('dist'));
+});
+
 gulp.task('sass', () => {
   return gulp
     .src('src/sass/*.scss')
@@ -66,7 +72,7 @@ gulp.task('browsersync', () => {
 });
 
 gulp.task('lint', gulp.parallel('stylelint', 'eslint'));
-gulp.task('build', gulp.parallel('twig', 'sass', 'babel'));
+gulp.task('build', gulp.parallel('twig', 'sass', 'babel', 'copy'));
 gulp.task('server', gulp.series('build', gulp.parallel('browsersync')));
 
 gulp.task('default', gulp.series('lint', 'build'));

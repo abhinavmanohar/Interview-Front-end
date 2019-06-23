@@ -2,37 +2,44 @@
     background-image: url("../resources/header1.jpg");
     background-position:60% 0%; 
     height: 600px;
-}
-.banner-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 50%;
-    margin: 0 auto;
-    @media screen and(max-width:1023px){
-        grid-template-columns: auto;
-        margin: 0;
-    }
-}
-.div-wrapper{
-    padding-top: 5%;
-}
-.banner-text-image{
-    width: 140px;
-    @media screen and(max-width:1023px){
-        width: 100px;
-    }
+    
+    .div-wrapper{
+        padding-top: 5%;
+        .banner-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            width: 50%;
+            margin: 0 auto;
+            column-gap: 20px;
+            @media screen and(max-width:1023px){
+                width: 100%;
+                grid-template-columns: auto;
+                margin: 0;
+            }
+            .icon-wrapper{
+                border: 1px solid #000;
+                @media screen and(max-width:1023px){
+                    display: -webkit-box;
+                    
+                    padding: 10px;   
+                }
+                .banner-text-image{
+                    width: 140px;
+                    padding-top: 20px;
+                    @media screen and(max-width:1023px){
+                        width: 100px;
+                        padding-top: 0px;
+                    }
+                
+                }
+                h2{
+                    @media screen and(max-width:1023px){
+                    margin-top: 30px;
+                    margin-left: 30px;
+                    }
+                }
+            }
 
-}
-.icon-wrapper{
-    @media screen and(max-width:1023px){
-        display: -webkit-box;
-        margin: 0 auto;
-        padding: 10px;   
-    }
-    h2{
-        @media screen and(max-width:1023px){
-        margin-top: 30px;
-        margin-left: 30px;
         }
     }
 }

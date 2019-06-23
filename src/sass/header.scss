@@ -1,88 +1,95 @@
 $color-orange:#e57927;
 $theme-color:$color-orange;
 
-.logo{
-    float: left;
-    padding: 15px 0px;
-    font-size: 20px;
-    padding-left: 5%;
-    @media screen and (max-width:1023px){
-        margin: 0 auto;
-        display: table;
-        float: none;
-    }
-}
-.menu{
-    float: right;
-   display: -webkit-inline-box;
-    padding: 15px 15px;
-    font-size: 20px;
-    padding-right: 5%;
-    & > div{
-        padding: 0px 15px;
-    }
-    @media screen and(max-width:1023px){
-        top: 70px;
-        position: absolute;
-        display: none;
-        width: 100%;
-        background-color: #333132;
-    }
-}
+
 
 body{
     margin: 0px;
 }
+
+.header{
+grid-area: header;
+color: #fff;
+height: 70px;
+grid-column: 1/7;
+
 .navbar{
     position: fixed;
     width: 100%;
     background-color: #333132;
     padding: 10px 0px;
     
-}
-.header{
-grid-area: header;
-color: #fff;
-height: 70px;
-grid-column: 1/7;
-}
-.mobile-menu{
-    display: none;
-    cursor: pointer;
-    @media screen and(max-width:1023px){
-        display: block;
-        position: absolute;
-        top: 0px;
-        padding: 20px;
-    }
-    .mobile-menu-span{
+    .logo{
+        float: left;
+        padding: 15px 0px;
         font-size: 20px;
+        padding-left: 5%;
+        @media screen and (max-width:1023px){
+            margin: 0 auto;
+            display: table;
+            float: none;
+        }
+        .color_logo{
+            color: $theme-color;
+        }
+    }
+    .menu{
+        float: right;
+       display: -webkit-inline-box;
+        padding: 15px 15px;
+        font-size: 20px;
+        padding-right: 5%;
+        & > div{
+            padding: 0px 15px;
+        }
+        @media screen and(max-width:1023px){
+            top: 70px;
+            position: absolute;
+            display: none;
+            width: 100%;
+            background-color: #333132;
+        }
+        .getintouch{
+            border-radius: 50px;
+            background-color:$theme-color;
+            @media screen and (max-width:1023px){
+                display: none;
+            }
+            .desktop-getintouch-icon-img{
+                width: 25px;
+                padding-right: 10px;
+            }
+            }
+    }
+    .mobile-menu{
+        display: none;
+        cursor: pointer;
+        @media screen and(max-width:1023px){
+            display: block;
+            position: absolute;
+            top: 0px;
+            padding: 20px;
+        }
+        .mobile-menu-span{
+            font-size: 20px;
+        }
+    }
+    .mobile-getintouch-icon-div{
+        display: none;
+        @media screen and (max-width:1023px){
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            padding: 25px;
+        }
+        .mobile-getintouch-icon-img{
+            width: 25px;
+        }
     }
 }
-.getintouch{
-border-radius: 50px;
-background-color:$theme-color;
-@media screen and (max-width:1023px){
-    display: none;
+
 }
-.desktop-getintouch-icon-img{
-    width: 25px;
-    padding-right: 10px;
-}
-}
-.mobile-getintouch-icon-div{
-    display: none;
-    @media screen and (max-width:1023px){
-        display: block;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        padding: 25px;
-    }
-    .mobile-getintouch-icon-img{
-        width: 25px;
-    }
-}
-.color_logo{
-    color: $theme-color;
-}
+
+
+

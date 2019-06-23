@@ -1,78 +1,71 @@
-.logo {
-  float: left;
-  padding: 15px 0px;
-  font-size: 20px;
-  padding-left: 5%; }
-  @media screen and (max-width: 1023px) {
-    .logo {
-      margin: 0 auto;
-      display: table;
-      float: none; } }
-
-.menu {
-  float: right;
-  display: -webkit-inline-box;
-  padding: 15px 15px;
-  font-size: 20px;
-  padding-right: 5%; }
-  .menu > div {
-    padding: 0px 15px; }
-  @media screen and (max-width: 1023px) {
-    .menu {
-      top: 50px;
-      position: absolute;
-      display: none;
-      width: 100%;
-      background-color: #333132; } }
-
 body {
   margin: 0px; }
-
-.navbar {
-  position: fixed;
-  width: 100%;
-  background-color: #333132;
-  padding: 10px 0px; }
 
 .header {
   grid-area: header;
   color: #fff;
   height: 70px;
   grid-column: 1/7; }
-
-.mobile-menu {
-  display: none;
-  cursor: pointer; }
-  @media screen and (max-width: 1023px) {
-    .mobile-menu {
-      display: block;
-      position: absolute;
-      top: 0px;
-      padding: 20px; } }
-  .mobile-menu .mobile-menu-span {
-    font-size: 20px; }
-
-.getintouch {
-  border-radius: 50px;
-  background-color: #e57927; }
-  @media screen and (max-width: 1023px) {
-    .getintouch {
-      display: none; } }
-  .getintouch .desktop-getintouch-icon-img {
-    width: 25px;
-    padding-right: 10px; }
-
-.mobile-getintouch-icon-div {
-  display: none; }
-  @media screen and (max-width: 1023px) {
-    .mobile-getintouch-icon-div {
-      display: block;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      padding: 25px; } }
-  .mobile-getintouch-icon-div .mobile-getintouch-icon-img {
-    width: 25px; }
-
-.color_logo {
-  color: #e57927; }
+  .header .navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #333132;
+    padding: 10px 0px; }
+    .header .navbar .logo {
+      float: left;
+      padding: 15px 0px;
+      font-size: 20px;
+      padding-left: 5%; }
+      @media screen and (max-width: 1023px) {
+        .header .navbar .logo {
+          margin: 0 auto;
+          display: table;
+          float: none; } }
+      .header .navbar .logo .color_logo {
+        color: #e57927; }
+    .header .navbar .menu {
+      float: right;
+      display: -webkit-inline-box;
+      padding: 15px 15px;
+      font-size: 20px;
+      padding-right: 5%; }
+      .header .navbar .menu > div {
+        padding: 0px 15px; }
+      @media screen and (max-width: 1023px) {
+        .header .navbar .menu {
+          top: 70px;
+          position: absolute;
+          display: none;
+          width: 100%;
+          background-color: #333132; } }
+      .header .navbar .menu .getintouch {
+        border-radius: 50px;
+        background-color: #e57927; }
+        @media screen and (max-width: 1023px) {
+          .header .navbar .menu .getintouch {
+            display: none; } }
+        .header .navbar .menu .getintouch .desktop-getintouch-icon-img {
+          width: 25px;
+          padding-right: 10px; }
+    .header .navbar .mobile-menu {
+      display: none;
+      cursor: pointer; }
+      @media screen and (max-width: 1023px) {
+        .header .navbar .mobile-menu {
+          display: block;
+          position: absolute;
+          top: 0px;
+          padding: 20px; } }
+      .header .navbar .mobile-menu .mobile-menu-span {
+        font-size: 20px; }
+    .header .navbar .mobile-getintouch-icon-div {
+      display: none; }
+      @media screen and (max-width: 1023px) {
+        .header .navbar .mobile-getintouch-icon-div {
+          display: block;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          padding: 25px; } }
+      .header .navbar .mobile-getintouch-icon-div .mobile-getintouch-icon-img {
+        width: 25px; }
