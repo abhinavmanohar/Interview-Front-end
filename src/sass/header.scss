@@ -22,7 +22,7 @@ $theme-color:$color-orange;
         padding: 0px 15px;
     }
     @media screen and(max-width:1023px){
-        top: 50px;
+        top: 70px;
         position: absolute;
         display: none;
         width: 100%;
@@ -37,11 +37,13 @@ body{
     position: fixed;
     width: 100%;
     background-color: #333132;
+    padding: 10px 0px;
+    
 }
 .header{
 grid-area: header;
 color: #fff;
-height: 50px;
+height: 70px;
 grid-column: 1/7;
 }
 .mobile-menu{
@@ -51,7 +53,7 @@ grid-column: 1/7;
         display: block;
         position: absolute;
         top: 0px;
-        padding: 10px;
+        padding: 20px;
     }
     .mobile-menu-span{
         font-size: 20px;
@@ -63,6 +65,10 @@ background-color:$theme-color;
 @media screen and (max-width:1023px){
     display: none;
 }
+.desktop-getintouch-icon-img{
+    width: 25px;
+    padding-right: 10px;
+}
 }
 .mobile-getintouch-icon-div{
     display: none;
@@ -71,8 +77,12 @@ background-color:$theme-color;
         position: absolute;
         top: 0px;
         right: 0px;
+        padding: 25px;
     }
     .mobile-getintouch-icon-img{
-        height :50px;
+        width: 25px;
     }
+}
+.color_logo{
+    color: $theme-color;
 }

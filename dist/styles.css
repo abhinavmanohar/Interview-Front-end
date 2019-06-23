@@ -404,12 +404,13 @@ body {
 .navbar {
   position: fixed;
   width: 100%;
-  background-color: #333132; }
+  background-color: #333132;
+  padding: 10px 0px; }
 
 .header {
   grid-area: header;
   color: #fff;
-  height: 50px;
+  height: 70px;
   grid-column: 1/7; }
 
 .mobile-menu {
@@ -420,7 +421,7 @@ body {
       display: block;
       position: absolute;
       top: 0px;
-      padding: 10px; } }
+      padding: 20px; } }
   .mobile-menu .mobile-menu-span {
     font-size: 20px; }
 
@@ -430,6 +431,9 @@ body {
   @media screen and (max-width: 1023px) {
     .getintouch {
       display: none; } }
+  .getintouch .desktop-getintouch-icon-img {
+    width: 25px;
+    padding-right: 10px; }
 
 .mobile-getintouch-icon-div {
   display: none; }
@@ -438,9 +442,13 @@ body {
       display: block;
       position: absolute;
       top: 0px;
-      right: 0px; } }
+      right: 0px;
+      padding: 25px; } }
   .mobile-getintouch-icon-div .mobile-getintouch-icon-img {
-    height: 50px; }
+    width: 25px; }
+
+.color_logo {
+  color: #e57927; }
 
 .banner {
   background-image: url("../resources/header1.jpg");
@@ -469,8 +477,6 @@ body {
 @media screen and (max-width: 1023px) {
   .icon-wrapper {
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin: 0 auto;
     padding: 10px; } }
 
@@ -538,6 +544,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
           column-gap: 10px;
   padding: 10px; }
   @media screen and (max-width: 1023px) {
@@ -561,21 +568,24 @@ body {
   background-color: #333132;
   color: #fff;
   display: inline-block;
-  width: 100%; }
-
-.follow-us {
-  float: right;
-  display: -webkit-inline-box;
-  padding: 15px 15px;
-  padding-right: 5%; }
-  @media screen and (max-width: 1023px) {
-    .follow-us {
-      float: none; } }
-
-.copy-right {
-  padding: 15px 15px;
-  padding-left: 5%;
-  display: -webkit-inline-box; }
+  width: 100%;
+  height: 70px; }
+  .footer .follow-us {
+    float: right;
+    display: -webkit-inline-box;
+    padding: 25px 15px;
+    padding-right: 5%; }
+    @media screen and (max-width: 1023px) {
+      .footer .follow-us {
+        float: none; } }
+    .footer .follow-us .follow-us-text {
+      margin-top: 5px; }
+    .footer .follow-us .footer-img {
+      width: 25px; }
+  .footer .copy-right {
+    padding: 25px 15px;
+    padding-left: 5%;
+    display: -webkit-inline-box; }
 
 html {
   height: 100%;
@@ -601,17 +611,19 @@ body {
   color: #fff; }
 
 .info, .testimonials, .form {
-  padding-top: 2%;
-  padding-bottom: 2%; }
+  padding-top: 4%;
+  padding-bottom: 4%; }
 
 @media screen and (min-width: 1024px) {
   .info {
     -webkit-column-count: 2;
+       -moz-column-count: 2;
             column-count: 2; } }
 
 @media screen and (max-width: 1023px) {
   .info {
     -webkit-column-count: 1;
+       -moz-column-count: 1;
             column-count: 1; } }
 
 .backgroundlightcolor {

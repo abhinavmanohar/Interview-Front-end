@@ -3,20 +3,30 @@
     color: #fff;
     display: inline-block;
     width: 100%;
-}
-.follow-us{
-    float: right;
-    display: -webkit-inline-box;
-    padding: 15px 15px;
-    
-    padding-right: 5%;
+    height: 70px;
     @media screen and(max-width:1023px){
-        float: none;
+        height: auto;
     }
-}
-
-.copy-right{
-    padding: 15px 15px;
-    padding-left: 5%;
-    display: -webkit-inline-box;
+    .follow-us{
+        float: right;
+        display: -webkit-inline-box;
+        padding: 25px 15px;
+        
+        padding-right: 5%;
+        @media screen and(max-width:1023px){
+            float: none;
+        }
+        .follow-us-text{
+            margin-top: 5px;
+        }
+        .footer-img{
+            width: 25px;
+        }
+    }
+    
+    .copy-right{
+        padding: 25px 15px;
+        padding-left: 5%;
+        display: -webkit-inline-box;
+    }
 }
